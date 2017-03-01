@@ -1,15 +1,16 @@
 {
   "name": "react-universal-container",
   "version": "0.1.0",
-  "description": "A React Component that allows for multiple front ends to use the same properties and state.",
+  "description": "Allows React and React-Native front end Components to use the same properties, and gives you the ability to write your important code once.",
   "main": "js/react-universal-container.js",
   "typings": "js/react-universal-container.d.ts",
-  "dependencies": {
+  "devDependencies": {
     "react": "^0.14.0"
   },
   "keywords": [
     "Universal Component",
-    "container",
+    "Container",
+    "shared",
     "react",
     "react-native"
   ],
