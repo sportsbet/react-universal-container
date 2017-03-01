@@ -8,12 +8,16 @@
     "react": "^0.14.0"
   },
   "keywords": [
-    "Universal Component",
+    "Universal",
     "Container",
     "shared",
     "react",
     "react-native"
   ],
+  "repository": { 
+    "type" : "git", 
+    "url" : "https://github.com/sportsbet/react-universal-container"
+  },
   "author": "Sportsbet Pty Ltd <tim.sawtell@sportsbet.com.au> (https://github.com/sportsbet)",
   "license": "MIT"
 }
