@@ -13,13 +13,13 @@ export interface ReactUniversalContainerProps<TChildComponentProps> {
  * container component.
  *
  * E.g
- * ScreenComponentIOS [Platform Specific]
+ * ScreenComponentReactNative [Native Platform Specific]
  * └─┬ ReactUniversalContainer<ViewComponentProps> [Cross Platform]
- *   └── ViewComponentIOS<ViewComponentProps> [Platform Specific]
+ *   └── ViewComponentReactNative<ViewComponentProps> [Native Platform Specific]
  * or
- * ScreenComponentWeb [Platform Specific]
+ * ScreenComponentReact [Web Platform Specific]
  * └─┬ ReactUniversalContainer<ViewComponentProps> [Cross Platform]
- *   └── ViewComponentWeb<ViewComponentProps> [Platform Specific]
+ *   └── ViewComponentReact<ViewComponentProps> [Web Platform Specific]
  */
 export class ReactUniversalContainer<TChildComponentProps, TChildComponentState> extends React.Component<ReactUniversalContainerProps<TChildComponentProps> & TChildComponentProps, TChildComponentState> {
 	props: any
