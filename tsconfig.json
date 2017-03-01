@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "preserveConstEnums": true,
+        "outDir": "js",
+        "skipDefaultLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": false,
+        "rootDir": "ts",
+        "moduleResolution": "node",
+        "declaration": true
+    },
+    "include": [
+        "ts/react-universal-container.tsx"
+    ]
+}

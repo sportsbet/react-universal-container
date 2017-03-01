@@ -1,20 +1,14 @@
 {
   "name": "react-universal-container",
   "version": "0.1.0",
-  "description": "A React Component that allows for multiple front ends to use the same properties and state",
+  "description": "A React Component that allows for multiple front ends to use the same properties and state.",
   "main": "js/react-universal-container.js",
   "typings": "js/react-universal-container.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "dependencies": {
-    "react": "^0.14.0 || ^15.0.0-0"
+    "react": "^0.14.0"
   },
   "keywords": [
-    "Universal",
-    "React",
-    "Component",
-    "universal",
+    "Universal Component",
     "container",
     "react",
     "react-native"
