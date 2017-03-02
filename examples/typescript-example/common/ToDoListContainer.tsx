@@ -1,19 +1,21 @@
 import * as React from 'react'
-import { UniversalContainer } from 'react-universal-container'
+import { UniversalContainer, UniversalContainerProps } from 'react-universal-container'
 
 export interface Item {
     name: string
 }
 
-export interface ToDoListData {
+interface ToDoListData {
     items?: Item[]
 }
 
-export interface ToDoListDispatchActions {
+interface ToDoListDispatchActions {
     didTapItem: (item: Item) => void
 }
 
 export interface ToDoListProps extends ToDoListData, ToDoListDispatchActions {}
+
+interface ToDoListContainerProps extends UniversalContainerProps<ToDoListProps> {}
 
 function didTapItem(item: Item): void {
     console.log("The most important `shared` code is executed here")
@@ -29,6 +31,6 @@ function didTapItem(item: Item): void {
  * map Dispatch actions so that the `component` object has those functions 
  * available to via its own props.
  */
-export class ToDoListContainer extends UniversalContainer<ToDoListProps, any> {
+export class ToDoListContainer extends UniversalContainer<ToDoListContainerProps, any> {
 
 }
