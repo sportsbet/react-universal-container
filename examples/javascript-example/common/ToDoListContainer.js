@@ -1,4 +1,4 @@
-import { ReactUniversalContainer } from 'react-universal-container';
+import { UniversalContainer } from 'react-universal-container';
 function didTapItem(item) {
     console.log("The most important `shared` code is executed here");
     // A more realistic kind of 'shared' callback action would be dispatching 
@@ -7,10 +7,10 @@ function didTapItem(item) {
     // main point is that you write this _important_ code once, here.
 }
 /**
- * ReactUniversalContainer subclasses are usually just prop and state holders.
+ * UniversalContainer subclasses are usually just prop and state holders.
  * A common use case would be for `ToDoListContainer` to connect to redux and
  * map Dispatch actions so that the `component` object has those functions
  * available to via its own props.
  */
-export class ToDoListContainer extends ReactUniversalContainer {
+export class ToDoListContainer extends UniversalContainer {
 }

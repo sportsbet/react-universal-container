@@ -29,7 +29,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 /**
- * ReactUniversalContainer is used as a generic, cross-platform component to
+ * UniversalContainer is used as a generic, cross-platform component to
  * "sandwich" between two platform-specific components. It takes a specific
  * prop named `component` which is the class of the child component it will
  * create. It passes all of its other props to that subcomponent. Any
@@ -38,24 +38,24 @@ var React = require("react");
  *
  * E.g
  * ScreenComponentReactNative [Native Platform Specific]
- * └─┬ ReactUniversalContainer<ViewComponentProps> [Cross Platform]
+ * └─┬ UniversalContainer<ViewComponentProps> [Cross Platform]
  *   └── ViewComponentReactNative<ViewComponentProps> [Native Platform Specific]
  * or
  * ScreenComponentReact [Web Platform Specific]
- * └─┬ ReactUniversalContainer<ViewComponentProps> [Cross Platform]
+ * └─┬ UniversalContainer<ViewComponentProps> [Cross Platform]
  *   └── ViewComponentReact<ViewComponentProps> [Web Platform Specific]
  */
-var ReactUniversalContainer = (function (_super) {
-    __extends(ReactUniversalContainer, _super);
-    function ReactUniversalContainer() {
+var UniversalContainer = (function (_super) {
+    __extends(UniversalContainer, _super);
+    function UniversalContainer() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    ReactUniversalContainer.prototype.render = function () {
+    UniversalContainer.prototype.render = function () {
         var x = this.props;
         var component = x.component, otherProps = __rest(x, ["component"]);
         var SubComponent = component;
         return (React.createElement(SubComponent, __assign({}, otherProps)));
     };
-    return ReactUniversalContainer;
+    return UniversalContainer;
 }(React.Component));
-exports.ReactUniversalContainer = ReactUniversalContainer;
+exports.UniversalContainer = UniversalContainer;

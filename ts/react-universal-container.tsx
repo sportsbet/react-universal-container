@@ -1,11 +1,11 @@
 import * as React from "react"
 
-export interface ReactUniversalContainerProps<TChildComponentProps> {
+export interface UniversalContainerProps<TChildComponentProps> {
 	component: React.ComponentClass<TChildComponentProps> | React.SFC<TChildComponentProps>
 }
 
 /**
- * ReactUniversalContainer is used as a generic, cross-platform component to
+ * UniversalContainer is used as a generic, cross-platform component to
  * "sandwich" between two platform-specific components. It takes a specific
  * prop named `component` which is the class of the child component it will 
  * create. It passes all of its other props to that subcomponent. Any 
@@ -14,14 +14,14 @@ export interface ReactUniversalContainerProps<TChildComponentProps> {
  *
  * E.g
  * ScreenComponentReactNative [Native Platform Specific]
- * └─┬ ReactUniversalContainer<ViewComponentProps> [Cross Platform]
+ * └─┬ UniversalContainer<ViewComponentProps> [Cross Platform]
  *   └── ViewComponentReactNative<ViewComponentProps> [Native Platform Specific]
  * or
  * ScreenComponentReact [Web Platform Specific]
- * └─┬ ReactUniversalContainer<ViewComponentProps> [Cross Platform]
+ * └─┬ UniversalContainer<ViewComponentProps> [Cross Platform]
  *   └── ViewComponentReact<ViewComponentProps> [Web Platform Specific]
  */
-export class ReactUniversalContainer<TChildComponentProps, TChildComponentState> extends React.Component<ReactUniversalContainerProps<TChildComponentProps> & TChildComponentProps, TChildComponentState> {
+export class UniversalContainer<TChildComponentProps, TChildComponentState> extends React.Component<UniversalContainerProps<TChildComponentProps> & TChildComponentProps, TChildComponentState> {
 	props: any
 	render() {
 		const x = this.props as any

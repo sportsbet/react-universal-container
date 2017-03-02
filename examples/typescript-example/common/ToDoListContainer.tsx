@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ReactUniversalContainer } from 'react-universal-container'
+import { UniversalContainer } from 'react-universal-container'
 
 export interface Item {
     name: string
@@ -24,11 +24,11 @@ function didTapItem(item: Item): void {
 }
 
 /**
- * ReactUniversalContainer subclasses are usually just prop and state holders.
+ * UniversalContainer subclasses are usually just prop and state holders.
  * A common use case would be for `ToDoListContainer` to connect to redux and
  * map Dispatch actions so that the `component` object has those functions 
  * available to via its own props.
  */
-export class ToDoListContainer extends ReactUniversalContainer<ToDoListProps, any> {
+export class ToDoListContainer extends UniversalContainer<ToDoListProps, any> {
 
 }

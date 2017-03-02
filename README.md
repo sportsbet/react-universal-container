@@ -14,9 +14,9 @@ If you have started to build a multi front-end React based system, you'll know t
 
 ```
 // Container.jsx
-import { ReactUniversalContainer } from 'react-universal-container'
+import { UniversalContainer } from 'react-universal-container'
 
-<ReactUniversalContainer
+<UniversalContainer
   component={YourPlatformSpecificComponent}
   title={"I'm a common property for these front ends"}
   businessLogicFunction={() => { console.log("I'm only written once") }}
