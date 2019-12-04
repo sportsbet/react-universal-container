@@ -1,7 +1,7 @@
-/// <reference types="react" />
 import * as React from "react";
 export interface UniversalContainerProps<TChildComponentProps> {
     component: React.ComponentClass<TChildComponentProps> | React.SFC<TChildComponentProps>;
+    isDisconnected?: boolean;
 }
 /**
  * UniversalContainer is used as a generic, cross-platform component to
