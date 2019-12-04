@@ -2,6 +2,7 @@ import * as React from "react"
 
 export interface UniversalContainerProps<TChildComponentProps> {
 	component: React.ComponentClass<TChildComponentProps> | React.SFC<TChildComponentProps>
+	isDisconnected?: boolean
 }
 
 /**
